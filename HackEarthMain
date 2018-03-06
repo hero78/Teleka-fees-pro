@@ -1,0 +1,36 @@
+/* IMPORTANT: Multiple classes and nested static classes are supported */
+
+/*
+ * uncomment this if you want to read input. 
+ */
+//imports for BufferedReader 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+//import for Scanner and other utility classes
+import java.util.*;
+
+
+// Warning: Printing unwanted or ill-formatted data to output will cause the test cases to fail
+
+class TestClass {
+    public static void main(String args[] ) throws Exception {
+        
+        List<String> inputList = new ArrayList<>(); 
+        
+        //BufferedReader
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String input = null;          // Reading input from STDIN 
+        while((input = br.readLine()) != null){ 
+            inputList.add(input);//add input line by line into a list 
+            
+        } 
+        inputList.stream().forEach(row ->{
+            System.out.println("Name:>>"+row);
+            
+        });
+      
+      
+
+    }
+}
